@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — NovaRec Studio</title>
-<meta name="description" content="Privacy policy for NovaRec Studio, an Android screen recorder, live streamer and video converter. No accounts, no analytics, no servers.">
+<meta name="description" content="Privacy policy for NovaRec Studio, an Android screen recorder, live streamer and video converter. No accounts, no analytics, no servers of ours. Ads are served by Google AdMob.">
 <style>
   :root{
     --bg:#070B12;
@@ -62,6 +62,7 @@
     margin:0;font-family:var(--mono);font-size:12.5px;
     color:var(--good);text-align:right;white-space:nowrap
   }
+  .row dd.shared{color:var(--warn)}
   .row .note{
     grid-column:1/-1;font-size:13px;color:var(--muted);
     margin:3px 0 0;line-height:1.5
@@ -113,8 +114,8 @@
 
   <p class="eyebrow">NovaRec Studio for Android</p>
   <h1>Privacy Policy</h1>
-  <p class="sub">NovaRec Studio records your screen, streams it live, and converts your videos. All of it happens on your device.</p>
-  <p class="dates">Effective 24 July 2026 &nbsp;·&nbsp; Last updated 24 July 2026</p>
+  <p class="sub">NovaRec Studio records your screen, streams it live, and converts your videos. All of that happens on your device. The free version shows ads, which are served by Google AdMob.</p>
+  <p class="dates">Effective 24 August 2026 &nbsp;·&nbsp; Last updated 24 August 2026 &nbsp;·&nbsp; Previous version: 24 July 2026</p>
 
   <!-- Signature: every data type, and where it actually goes -->
   <section class="ledger" aria-label="Where your data goes">
@@ -151,17 +152,27 @@
         <p class="note">Goes from your device directly to Twitch, YouTube or the RTMP server you entered.</p>
       </div>
       <div class="row">
+        <dt>Advertising ID (AAID)</dt>
+        <dd class="shared">Shared with Google</dd>
+        <p class="note">Used by Google AdMob to serve and measure the ads in the free version.</p>
+      </div>
+      <div class="row">
+        <dt>Device &amp; app info, IP-based region</dt>
+        <dd class="shared">Shared with Google</dd>
+        <p class="note">Device model, OS and app version, approximate location from your IP — collected by the AdMob SDK for ad delivery and fraud prevention.</p>
+      </div>
+      <div class="row">
         <dt>Name, email, account</dt>
         <dd>Not collected</dd>
         <p class="note">There is no sign-up and no account in this app.</p>
       </div>
       <div class="row">
-        <dt>Usage &amp; analytics</dt>
+        <dt>Usage analytics</dt>
         <dd>Not collected</dd>
-        <p class="note">No analytics SDK, no advertising SDK, no crash tracking.</p>
+        <p class="note">No analytics SDK and no crash-tracking SDK in this app.</p>
       </div>
     </dl>
-    <p class="verdict">We operate no servers. We collect nothing. Nothing you record ever reaches us.</p>
+    <p class="verdict">We operate no servers and receive nothing ourselves. Nothing you record ever leaves your device — not to us, and not to Google.</p>
   </section>
 
   <h2>Who we are</h2>
@@ -171,7 +182,21 @@
   <p>NovaRec Studio captures the screen of your device and saves it as a video file, or streams it live to a service you choose. It can also convert, trim and crop video files you select, and export them as animated GIFs. Every one of these operations runs locally on your device.</p>
 
   <h2>What we collect</h2>
-  <p><strong>Nothing.</strong> CipherRoot Software runs no servers and has no way to receive your data. The app contains no account system, no advertising SDK and no analytics SDK. We do not collect, transmit, sell or share any personal information.</p>
+  <p><strong>CipherRoot Software collects nothing.</strong> We run no servers and have no way to receive your data. The app contains no account system and no analytics SDK. We do not collect, transmit or sell any personal information.</p>
+  <p>The free version does contain one third-party component: the <strong>Google AdMob</strong> advertising SDK. Google receives data through it, as described in the next section. We never see that data ourselves.</p>
+
+  <h2>Advertising (Google AdMob)</h2>
+  <p>The free version of NovaRec Studio shows ads supplied by Google AdMob. To select, deliver and measure those ads, the AdMob SDK may collect and share the following with Google:</p>
+  <ul>
+    <li><strong>Your advertising ID (AAID)</strong> — a resettable identifier your device provides for advertising.</li>
+    <li><strong>Device and app information</strong> — device model, operating system version, app version, language and screen size.</li>
+    <li><strong>Approximate location</strong> — a coarse region derived from your IP address. The app never requests GPS or precise location permission.</li>
+    <li><strong>Ad interaction data</strong> — which ads were shown, viewed or tapped, used for frequency capping, measurement and fraud prevention.</li>
+  </ul>
+  <p><strong>Your recordings, screen content, microphone audio, camera video and stream keys are never sent to Google, to AdMob, or to anyone else.</strong> The advertising SDK has no access to any of them.</p>
+  <p>Where ads appear is deliberately limited: an ad is <strong>never</strong> shown while you are recording or streaming, and ads are <strong>never</strong> placed over the recording controls or the facecam overlay.</p>
+  <p>You can reset or delete your advertising ID at any time from your device settings (Settings → Google → Ads), which also lets you opt out of ad personalisation. If you are in the European Economic Area, the United Kingdom or Switzerland, the app shows a consent dialog on first launch and your choice can be changed later from the app.</p>
+  <p>Google's handling of this data is described in <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use our services</a> and in the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
 
   <h2>Your recordings, screen content, audio and camera</h2>
   <p>Screen captures, microphone audio and front-camera video are processed entirely on your device and written straight to your device storage — videos to Movies/NovaRec, animated GIFs to Pictures/NovaRec. This content is never uploaded to us and is never accessible to us.</p>
@@ -191,18 +216,20 @@
     <li><strong>Display over other apps.</strong> To show the floating recording controls and the facecam overlay while you are using other apps.</li>
     <li><strong>Notifications.</strong> To show the ongoing recording or streaming notification, which Android requires and which lets you stop at any moment.</li>
     <li><strong>Photos and videos.</strong> To list your existing recordings and to let you pick a video to convert.</li>
-    <li><strong>Internet.</strong> Used only to send your live stream to the service you chose. The app makes no other network requests.</li>
+    <li><strong>Advertising ID.</strong> Declared by the AdMob SDK so ads can be served and measured in the free version.</li>
+    <li><strong>Internet.</strong> Used to send your live stream to the service you chose, and to load ads from Google AdMob. The app makes no other network requests.</li>
   </ul>
 
   <h2>Keeping and deleting your data</h2>
-  <p>Because nothing leaves your device, there is nothing for us to keep and nothing for us to delete on our side.</p>
+  <p>Because nothing reaches us, there is nothing for us to keep and nothing for us to delete on our side.</p>
   <p>You can delete any recording or GIF whenever you like, using your gallery or a file manager. Uninstalling the app removes its settings, including any saved stream key; files you already saved to your gallery stay on your device until you delete them yourself.</p>
+  <p>Data held by Google in connection with advertising is controlled by Google. You can reset or delete your advertising ID from your device settings, and you can manage your Google ad settings at <a href="https://myadcenter.google.com" rel="noopener">myadcenter.google.com</a>.</p>
 
   <h2>Children</h2>
-  <p>This app is not directed to children under 13. We do not knowingly collect data from anyone, children included.</p>
+  <p>This app is not directed to children under 13, and we do not knowingly collect data from children. Ads served in the app are configured as not directed to children.</p>
 
   <h2>Changes to this policy</h2>
-  <p>If this policy changes, the updated version appears on this page and inside the app, carrying a new effective date.</p>
+  <p>If this policy changes, the updated version appears on this page and inside the app, carrying a new effective date. This version was updated to disclose the addition of Google AdMob to the free version of the app.</p>
 
   <section class="contact">
     <h2 style="margin-top:0;padding-top:0;border-top:0">Contact</h2>
@@ -211,7 +238,7 @@
   </section>
 
   <footer>
-    © 2026 CipherRoot Software · This page loads no fonts, scripts, cookies or trackers.
+    © 2026 CipherRoot Software · This page itself loads no fonts, scripts, cookies or trackers.
   </footer>
 
 </main>
